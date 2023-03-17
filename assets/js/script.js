@@ -7,4 +7,15 @@
   5 - Scrivere sulla pagina la password formata dall'insieme di tutte le variabili.
 */ 
 
-console.log("test");
+const nome = prompt("Inserisci il tuo nome");
+
+const cognome = prompt("Inserisci il tuo cognome");
+
+const colorePreferito = prompt("Inserisci il tuo colore preferito");
+
+const age = prompt("Inserisci la tua età");
+
+document.getElementById("pwd").innerHTML += `
+  ${nome}${cognome}${colorePreferito}${age}
+`
+
