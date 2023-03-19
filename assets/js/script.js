@@ -15,7 +15,12 @@ const colorePreferito = prompt("Inserisci il tuo colore preferito");
 
 const age = prompt("Inserisci la tua età");
 
-document.getElementById("pwd").innerHTML += `
-  ${nome}${cognome}${colorePreferito}${age}
-`
+const pwdStr = nome + cognome + colorePreferito + age;
+
+document.getElementById("pwd").innerHTML += pwdStr;
+
+// 2° metodo
+// document.getElementById("pwd").innerHTML += `
+//   ${nome}${cognome}${colorePreferito}${age}
+// `
 
